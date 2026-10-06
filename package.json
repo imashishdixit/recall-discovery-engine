@@ -1,0 +1,15 @@
+{
+  "name": "recall-discovery-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Collects public feedback about finding photos in Google Photos, codes it against a fixed codebook with an LLM, and compares where retrieval breaks.",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "test": "node test/smoke.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "google-play-scraper": "^10.1.3"
+  }
+}

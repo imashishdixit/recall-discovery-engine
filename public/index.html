@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo recall discovery engine</title>
+<meta name="description" content="Collects public feedback about finding photos in Google Photos, codes each item against a fixed codebook, and compares where retrieval breaks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Photo recall discovery engine</h1>
+    <p class="lede">Collects what people say in public about finding photos in Google Photos, codes every item against one fixed codebook, and compares where retrieval breaks when memory is incomplete.</p>
+    <div id="funnel" class="funnel" aria-label="Dataset funnel"></div>
+    <div id="banner" class="banner" hidden></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Steps">
+  <div class="wrap tabrow" role="tablist">
+    <button role="tab" data-tab="collect" aria-selected="true">1. Collect</button>
+    <button role="tab" data-tab="code">2. Code</button>
+    <button role="tab" data-tab="compare">3. Compare</button>
+    <button role="tab" data-tab="ask">4. Ask</button>
+    <button role="tab" data-tab="how">How it works</button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section id="tab-collect" class="panel"></section>
+  <section id="tab-code" class="panel" hidden></section>
+  <section id="tab-compare" class="panel" hidden></section>
+  <section id="tab-ask" class="panel" hidden></section>
+  <section id="tab-how" class="panel" hidden></section>
+</main>
+
+<footer class="wrap foot">
+  <p>Sources are public reviews and posts. Usernames are not stored. Codes are assigned by a language model against the codebook under “How it works”; every quote shown is checked character for character against its source.</p>
+</footer>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
